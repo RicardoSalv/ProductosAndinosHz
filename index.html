@@ -3,14 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
+  <title>Productos Andinos Hz</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #333; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url("https://images.unsplash.com/photo-1505935428862-770b6f24f629") center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background: #595959;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px;
+      font-size: 1.3em;
+      color: #8B4513;
+    }
+    .card p {
+      margin: 0 15px 15px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>¡Hola! Bienvenido a mi página web 🚀</h1>
-  <p>Creada desde cero y publicada gratis.</p>
+  <header>
+    <h1>Productos Andinos Hz</h1>
+    <p>Sabores auténticos de Huaraz: Café, Queso y Jamón Serrano</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+  </nav>
+  <section class="container" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="card">
+<img src="cafe.jpg" alt="Café andino">
+        <h3>Café Andino</h3>
+        <p>Aroma intenso y sabor único, cultivado en las alturas de los Andes.</p>
+      </div>
+      <div class="card">
+<img src="queso.jpg" alt="Queso artesanal">
+        <h3>Queso Artesanal</h3>
+        <p>Elaborado con tradición y calidad, perfecto para acompañar tus comidas.</p>
+      </div>
+      <div class="card">
+<img src="jamon.jpg" alt="Jamón serrano">
+        <h3>Jamón Serrano</h3>
+        <p>Curado naturalmente, con el sabor auténtico de la sierra.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>Productos Andinos Hz</strong> nos apasiona compartir los sabores de Huaraz con el mundo.
+      Trabajamos con productores locales para ofrecer café, quesos y jamones de alta calidad,
+      preservando las tradiciones de la sierra andina.
+    </p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Productos Andinos Hz - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
+
